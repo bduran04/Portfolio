@@ -38,9 +38,7 @@ export default function ProjectCard(props) {
       <Card className={classes.expand}>
         <CardMedia
           className={classes.media}
-          style={{
-            backgroundImage: props.image ? `url(${props.image})` : "none"
-          }}
+          image={props.image}
           title="Project"
         />
         <CardContent>
