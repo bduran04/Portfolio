@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
 import Projects from "./Projects";
 import Header from "./components/Header";
@@ -13,7 +13,7 @@ import './App.css';
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
-      <Router>
+      <Router basename="/Portfolio">
       <Header />
         <Switch>
           <Route exact path="/">
