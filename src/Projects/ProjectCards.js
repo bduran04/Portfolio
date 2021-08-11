@@ -8,6 +8,7 @@ import Link from '@material-ui/core/Link';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkIcon from '@material-ui/icons/Link';
 import Grid from '@material-ui/core/Grid';
 
 import './style.css';
@@ -46,7 +47,7 @@ export default function ProjectCard(props) {
             {props.title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-             {props.description}
+            {props.description}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -56,7 +57,9 @@ export default function ProjectCard(props) {
             </Link>
           </IconButton>
           <IconButton>
-
+          <Link href={props.deployedLink} color="inherit">
+            <LinkIcon />
+            </Link>
           </IconButton>
         </CardActions>
       </Card>

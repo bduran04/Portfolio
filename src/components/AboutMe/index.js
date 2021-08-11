@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: "center",
         '& > *': {
-            margin: theme.spacing(1),
             width: theme.spacing(20),
             height: theme.spacing(25),
         },
@@ -25,9 +24,9 @@ function AboutMe(props) {
                 <Avatar alt="Belle" src={pic} />
             </div>
             <p className="introduction-text">
-                Loves cats, gardening, and authentic Mexican cuisine.
-                <br/>
-                My grandma's tamales can throw down with Bobby Flay and Gordon Ramsay.
+                Full Stack Developer with experience in technical writing.
+                <br />
+                Loves cats and gardening.
             </p>
         </Container>
     )

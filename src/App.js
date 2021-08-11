@@ -8,33 +8,35 @@ import Intro from "./components/Intro";
 import { MuiThemeProvider } from '@material-ui/core';
 import theme from './themes/theme'
 import './App.css';
+import TechnicalAbout from "./components/TechnicalAbout";
 
 
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
       <Router basename="/Portfolio">
-      <Header />
+        <Header />
         <Switch>
           <Route exact path="/">
             <Intro />
             <div className="section colored">
-              <div className="section-container">
+              <div className="section-about-me">
                 <AboutMe />
               </div>
             </div>
             <div className="section dark">
-              <div className="section-container">
-                <ContactMe/>
+              <div className="section-contact-me">
+                <ContactMe />
               </div>
             </div>
           </Route>
           <div className="section normal">
-          <div className="section">
-          <Route exact path="/projects" component={Projects} />
+            <div className="section">
+              <Route exact path="/projects" component={Projects} />
+            </div>
           </div>
-          </div>
-          </Switch>
+          <Route exact path="/about" component={TechnicalAbout} />
+        </Switch>
       </Router>
     </MuiThemeProvider>
   );
