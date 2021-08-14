@@ -7,4 +7,12 @@
     font-weight: 150;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .about-text {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align:left
   }
