@@ -40,14 +40,14 @@ const About = () => {
                          <img style={{ height: 400 }} src={pic} alt="Belle2" />
                     </Grid>
                     <Grid item xl={6} md={6} sm={12} xs={12}>
-                         <p className="about-text">
+                         <Typography variant="subtitle2" align="left">
                               I received a Certificate in Full Stack Web Development from Southern Methodist University where I learned best practices for writing clean code and designing mobile-friendly websites and applications.
                               <br />
                               I've also completed the relevant courses: Numerical Analysis, Abstract Algebra, Matrix Theory, and Vector Calculus towards a BA in Mathematics from the University of North Texas.
                               <br />
                               <br />
                               On my down time, I enjoy spoiling my cats, Kitsune and Mittens, learning new recipes, and tending my garden.
-                         </p>
+                         </Typography>
                     </Grid>
                </Grid>
                <Grid container
