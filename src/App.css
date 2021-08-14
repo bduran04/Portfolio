@@ -26,9 +26,7 @@ p {
 .section {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  position: relative;
+
 }
 
 .section-about-me {
@@ -41,6 +39,7 @@ p {
 }
 
 .section-contact-me {
+  background: #16151C;
   width: 100%;
   max-width: 600px;
   margin-left: auto;
@@ -49,25 +48,24 @@ p {
   padding-bottom: 200px;
 }
 
-.section.dark {
+.pages {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.dark {
   background: #16151C;
 }
 
-.section-container.header-component {
-  padding: 0;
-}
-
-.section-container.footer-component {
-  padding: 0;
-}
-
-.section.colored {
+.colored {
   background-color: #cb9ca1
   ;
 }
 
-.section.normal {
-  background-color: #b2ebf2
+.normal {
+  background-color: #b2ebf2;
 }
 
 p.headline {

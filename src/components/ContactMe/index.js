@@ -7,7 +7,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import './style.css';
 
-function ContactMe(props) {
+function ContactMe() {
     return (
         <Container className="contact" style={{ height: '40vh' }}>
             <p className="contact-text">

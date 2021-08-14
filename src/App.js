@@ -8,7 +8,12 @@ import Intro from "./components/Intro";
 import { MuiThemeProvider } from '@material-ui/core';
 import theme from './themes/theme'
 import './App.css';
-import TechnicalAbout from "./components/TechnicalAbout";
+import About from "./About";
+
+const padding = {
+  paddingBottom: 50,
+  paddingTop: 30
+}
 
 
 function App() {
@@ -17,25 +22,25 @@ function App() {
       <Router basename="/Portfolio">
         <Header />
         <Switch>
-          <Route exact path="/">
-            <Intro />
-            <div className="section colored">
-              <div className="section-about-me">
-                <AboutMe />
+          <>
+            <Route exact path="/">
+              <Intro />
+              <div className="colored">
+                <div className="section-about-me">
+                  <AboutMe />
+                </div>
               </div>
-            </div>
-            <div className="section dark">
-              <div className="section-contact-me">
-                <ContactMe />
+              <div className="dark">
+                <div className="section-contact-me">
+                  <ContactMe />
+                </div>
               </div>
-            </div>
-          </Route>
-          <div className="section normal">
-            <div className="section">
+            </Route>
+            <div className="normal" style={padding}>
               <Route exact path="/projects" component={Projects} />
+              <Route exact path="/about" component={About} />
             </div>
-          </div>
-          <Route exact path="/about" component={TechnicalAbout} />
+          </>
         </Switch>
       </Router>
     </MuiThemeProvider>
