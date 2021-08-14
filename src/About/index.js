@@ -67,16 +67,16 @@ const About = () => {
                                    <Typography>
                                         <ul align="left">
                                              <li>
-                                                  Programming Languages: HTML, JavaScript, CSS, SQL, NoSQL, Express.js, Node.js, React.js
+                                                  Programming Languages: React.js, Next.js, JavaScript, Express.js, Node.js, HTML, CSS, SQL, NoSQL
                                              </li>
                                              <li>
-                                                  Database Management: Mysql, NoSQL, MongoDB
+                                                  Database Management: Mysql, MongoDB
                                              </li>
                                              <li>
                                                   Library/Frameworks: Material-UI, Bootstrap, Geist-UI, Materialize
                                              </li>
                                              <li>
-                                                  Other Technologies: Handlebars, Git, Heroku, IndexedDB API
+                                                  Other Technologies: Vercel, Git, Handlebars, Heroku, IndexedDB, API
                                              </li>
                                         </ul>
                                    </Typography>
