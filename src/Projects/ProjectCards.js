@@ -36,7 +36,7 @@ export default function ProjectCard(props) {
 
   return (
     <Grid item xs={12} sm={6}>
-      <Card className={classes.expand}>
+      <Card className={classes.expand} >
         <CardMedia
           className={classes.media}
           image={props.image}

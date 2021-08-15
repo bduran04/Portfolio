@@ -2,6 +2,7 @@ import { Button, Card, CardContent, Container, Divider, Grid, List, ListItem, Li
 import React from 'react';
 import pic from "../images/BD_image.jpg";
 import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
+import Paper from '@material-ui/core/Paper';
 import resume from "../images/Resume.pdf"
 
 const useStyles = makeStyles({
@@ -40,6 +41,7 @@ const About = () => {
                          <img style={{ height: 400 }} src={pic} alt="Belle2" />
                     </Grid>
                     <Grid item xl={6} md={6} sm={12} xs={12}>
+                         <Paper elevation={3} style={{padding: 30, backgroundColor:"#e5ffff"}}>
                          <Typography variant="subtitle2" align="left">
                               I received a Certificate in Full Stack Web Development from Southern Methodist University where I learned best practices for writing clean code and designing mobile-friendly websites and applications.
                               <br />
@@ -48,6 +50,7 @@ const About = () => {
                               <br />
                               On my down time, I enjoy spoiling my cats, Kitsune and Mittens, learning new recipes, and tending my garden.
                          </Typography>
+                         </Paper>
                     </Grid>
                </Grid>
                <Grid container
@@ -59,7 +62,7 @@ const About = () => {
                     className={classes.media}
                >
                     <Grid item xs={12} sm={6} y={10}>
-                         <Card >
+                         <Card elevation={3} style={{backgroundColor: "#e5ffff"}}>
                               <CardContent>
                                    <Typography variant="h6">
                                         Technical Skills
